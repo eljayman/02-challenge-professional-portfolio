@@ -9,11 +9,15 @@
     <title>Professional Portfolio</title>
 </head>
 <body>
+    <!-- the containers shall be flex containers so that on a mobile device the content will be displayed in a single column and made to grow into two and three columns on devices with larger screens -->
     <header>
+        <!-- contains image, name, links -->
         <img src="./assets/PLACEHOLDER" alt="SELFIE">
+        <!-- image shall be encircled at the top left over name -->
         <h1>LELAND JOHNSON</h1>
         <div class="header-links">
-            <nav ul>
+            <!-- header links shall be right justified -->
+            <ul>
                 <li>
                     <a href="#about-me">ABOUT ME</a>
                 </li>
@@ -26,12 +30,14 @@
             </nav>
         </div>
     </header>
-    <div class="banner">
+    <div class="hero">
+        <!-- hero should have cool subtitle on the bottom-right -->
         <div class="subtitle">
             <h2>COOL SUBTITLE</h2>
         </div>
     </div>
-    <div id="about-me" class="about-me">
+    <div id="#about-me" class="about-me">
+        <!-- this section of the page shall be in columns and rows such that the left is ~25% of the width of the screen on larger displays and the right column fills the rest -->
         <div class="column-1">
             <h3>ABOUT ME</h3>
         </div>
@@ -44,7 +50,45 @@
             <h3>WORK</h3>
         </div>
         <div class="column-2">
-            <!-- class work, column-2 will be defined in next revision -->
+            <!-- each container within column-2 should link to corresponding challenges/projects -->
+            <div class="work-row-1">
+                <!-- this container shall span the entire column -->
+                <div class="description">
+                    <h4>DESCRIPTION OF APP</h4>
+                    <h5>TOOLS USED</h5>
+                </div>
+            </div>
+            <div class="work-row-2">
+                <!-- this container shall have two columns that span its width -->
+                <div class="work-row-2-column-1">
+                    <div class="description">
+                        <h4>DESCRIPTION OF APP</h4>
+                        <h5>TOOLS USED</h5>
+                    </div>
+                </div>
+                <div class="work-row-2-column-2">
+                    <div class="description">
+                        <h4>DESCRIPTION OF APP</h4>
+                        <h5>TOOLS USED</h5>
+                    </div>
+                </div>    
+            </div>
+            <div class="work-row-3">
+                 <!-- this container shall have two columns that span its width -->
+                 <div class="work-row-3-column-1">
+                    <div class="description">
+                        <h4>DESCRIPTION OF APP</h4>
+                        <h5>TOOLS USED</h5>
+                    </div>
+                </div>
+                <div class="work-row-3-column-2">
+                    <div class="description">
+                        <h4>DESCRIPTION OF APP</h4>
+                        <h5>TOOLS USED</h5>
+                    </div>
+                </div>    
+            </div>
+            </div>
         </div>
     </div>
     <div id="#contact" class="contact">
@@ -58,12 +102,15 @@
                 </li>
                 <li>
                     EMAIL@EMAIL.EMAIL
+                    <!-- this shall link to an email terminal function -->
                 </li>
                 <li>
                     URL
+                    <!-- this shall display the URL -->
                 </li>
                 <li>
                     github URL
+                    <!-- this shall display the github repository URL -->
                 </li>
             </ul>
         </div>
