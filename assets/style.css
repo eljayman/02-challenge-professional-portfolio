@@ -1,8 +1,9 @@
 :root {
-    --background-color: rgb(211, 247, 242);
-    --header-background-color: rgba(3, 108, 194, 0.432);
+    --background-color: rgba(211, 247, 242, 0.753);
+    /* --header-background-color: rgba(3, 108, 194, 0.432); */
     --link-color: rgb(109, 53, 53);
     --border-color: rgb(0, 0, 0);
+    --bg-color-2: rgba(110, 83, 83, 0.788);
 }
 
 *{ 
@@ -10,6 +11,7 @@
 }
 
 body {
+    border: solid var(--border-color);
     font-size: 3vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -30,38 +32,53 @@ h4 {
     font-size: 100%;
 }
 h5 {
-    font-size: 50%;
+    font-size: 100%;
 }
 h6 {
-    font-size: 25%;
+    font-size: 75%;
 }
 
 header {  
-    background-color: var(--header-background-color);
-    /* border-color: var(--border-color); */
     border: solid var(--border-color);
     width: 100%;
     margin-bottom: 1vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header h1 {
     text-align: center;
-    /* margin: 5vw 0vw; */
+    position: absolute;
+    top: 7.5vw;
 }
-header img {
+/* header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--header-background-color);
     padding: 5vw;
     border-radius: 50%;
     max-height: 50vw;
+} */
+header a { 
+    font-size: 100%;  
 }
-header a {  
-    display: block;
-    font-size: 150%;
-    text-align: center;  
-    padding: 1vw;  
+.header-1 {
+    width: 60%;
+    border: solid var(--border-color);
+}
+.header-2 {
+    width: 40%;
+    border: solid var(--border-color);
+    text-align: right;
+}
+.header .links-about-me {
+    margin: 2vw;
+}
+.header .links-works {
+    margin: 2vw;
+}
+.header .links-contact {
+    margin: 2vw;
 }
 
 .hero {
@@ -69,7 +86,7 @@ header a {
     flex-direction: row-reverse;
     width: 100%;
     height: 125vw;
-    border: solid;
+    border: solid var(--border-color);
     margin-bottom: 1vw;
     background-image: url("../assets/image-me.jpg");
     background-size: cover;
@@ -78,7 +95,7 @@ header a {
 .hero .subtitle {
     align-self: flex-end;
     padding: 5vw;
-    background-color: rgba(110, 83, 83, 0.788)
+    background-color: var(--bg-color-2);
 }
 
 main {
@@ -86,31 +103,128 @@ main {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap;   */
     padding: 2vw;
 }
 .column {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
+
 .about-me {
-    border: solid;
-    border-color: var(--border-color);
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
 }
 .left-side-about {
-    width: 30%;
-    border: solid;
-}
-.left-side-about h3 {
-    font-weight: bold;
+    width: 100%;
+    border: solid var(--border-color);
+    padding: 1vw;
 }
 .right-side-about {
-    border: solid;
+    border: solid var(--border-color);
     align-self: right;
-    width: 70%;
+    width: 100%;
+    padding: 1vw;
 }
-.right-side-about p {
-    font-weight: normal;
+
+.works {
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+}
+.left-side-works {
+    padding: 1vw;
+    width: 100%;
+    border: solid var(--border-color);
+}
+.right-side-works {
+    flex-wrap: wrap;
+    padding: 1vw;
+    width: 100%;
+    border: solid var(--border-color);
+}
+.works-1 {
+    width: 100%;
+    height: 62.5vw;
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+    background-image: url("../assets/image-me.jpg");
+    background-size: cover;
+    background-position: center;    
+}
+.desc {
+    display: block;
+    width: 30vw;
+    background-color: var(--bg-color-2);
+}
+.works-2 {
+    display:flex;
+    width: 100%;
+    /* margin: 1vw; */
+    border: solid var(--border-color);
+}
+.work-row-2-column-1 {
+    width: 50%;
+    height: 31vw;
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+    background-image: url("../assets/image-me.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+.work-row-2-column-2{
+    width: 50%;
+    height: 31vw;
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+    background-image: url("../assets/image-me.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+.works-3 {
+    display:flex;
+    /* margin: 1vw; */
+    border: solid var(--border-color);
+}
+.work-row-3-column-1 {
+    width: 50%;
+    height: 31vw;
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+    background-image: url("../assets/image-me.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+.work-row-3-column-2 {
+    width: 50%;
+    height: 31vw;
+    border: solid var(--border-color);
+    margin-bottom: 1vw;
+    background-image: url("../assets/SSC1.png");
+    background-size: cover;
+    background-position: center; 
+}
+.contact {
+    margin-bottom: 1vw;
+    border: solid var(--border-color);
+}
+.left-side-contact {
+    padding: 1vw;
+    width: 100%;
+    border: solid var(--border-color);
+}
+.right-side-contact {
+    border: solid var(--border-color);
+    width: 100%;
+    text-align: right;
+}
+.phone-number {
+    padding: 1vw;
+}
+.email-address {
+    padding: 1vw;
+}
+.url {
+    padding: 1vw;
 }

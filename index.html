@@ -14,107 +14,94 @@
     <!-- the containers shall be made so that on a mobile device the content will be displayed in a single column and made to grow into two columns on devices with larger screens -->
     <header>
         <!-- contains image, name, links -->
-        <section class="column header-1">
-            <img src="./assets/imgprofport.jpg" alt="selfie">
+        <section class="row header-1">
+            <!-- <img src="./assets/imgprofport.jpg" alt="selfie"> -->
             <h1>Leland Johnson</h1>            
         </section>
-        <section class="column header-2">
-            <div class="header link">
-                <div class="header link-about-me">
-                    <a href="#about-me">ABOUT ME</a>
+        <section class="row header-2">
+            <div class="header links">
+                <!-- these shall go to the corresponding section of the page -->
+                <div class="header links-about-me">
+                    <a href="#about-me">About Me</a>
                 </div>
-                <div class="header link-work">
-                    <a href="#work">WORK</a>
+                <div class="header links-works">
+                    <a href="#works">Work</a>
                 </div>
-                <div class="header link-contact">
-                    <a href="#contact">CONTACT</a>
+                <div class="header links-contact">
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </section>
     </header>
     <div class="hero" alt="Office Space Selfie">
-        <!-- hero should have cool subtitle on the bottom-right -->
+        <!-- hero shall have subtitle on the bottom-right -->
         <h2 class="subtitle">Building the Dream</h2>        
     </div>
     <main>
+                <!-- this section of the page shall be in columns and rows such that the left is 30% of the width of the screen on larger displays and the right column fills the rest -->
         <section id="about-me" class="row about-me">
-        <!-- this section of the page shall be in columns and rows such that the left is ~25% of the width of the screen on larger displays and the right column fills the rest -->
             <div class="column left-side-about"><h3>About Me</h3>            
             </div>
             <div class="column right-side-about">
             <p>I am typing text about me so that I can see how it fills this container.  I will continue typing until I see how the field responds to a bigger block of text.  So far I like how it is working.</p>
             </div>
         </section>
-        <div id="work" class="work">
-            <div class="column-1">
-                <h3>WORK</h3>
+        <section id="works" class="row works">
+            <div class="column left-side-works"><h3>Works</h3>
             </div>
-            <div class="column-2">
+            <div class="column right-side-works">
             <!-- each container within column-2 should link to corresponding challenges/projects -->
-                <div class="work-row-1">
+                <div class="row works-1">
                 <!-- this container shall span the entire column -->
-                    <div class="description">
-                    <h4>DESCRIPTION OF APP</h4>
-                    <h5>TOOLS USED</h5>
-                    </div>
+                    <h4 class="desc">DESCRIPTION OF APP</h4>
+                    <h6 class="desc">TOOLS USED</h6>
                 </div>
-                <div class="work-row-2">
+                <div class="row works-2">
                 <!-- this container shall have two columns that span its width -->
                     <div class="work-row-2-column-1">
-                        <div class="description">
-                            <h4>DESCRIPTION OF APP</h4>
-                            <h5>TOOLS USED</h5>
-                        </div>
+                        <h4 class="desc">DESCRIPTION OF APP</h4>
+                        <h6 class="desc">TOOLS USED</h6>
                     </div>
                     <div class="work-row-2-column-2">
-                        <div class="description">
-                            <h4>DESCRIPTION OF APP</h4>
-                            <h5>TOOLS USED</h5>
-                        </div>
+                        <h4 class="desc">DESCRIPTION OF APP</h4>
+                        <h6 class="desc">TOOLS USED</h6>
                     </div>    
                 </div>
-                <div class="work-row-3">
+                <div class="row works-3">
                  <!-- this container shall have two columns that span its width -->
                     <div class="work-row-3-column-1">
-                        <div class="description">
-                            <h4>DESCRIPTION OF APP</h4>
-                            <h5>TOOLS USED</h5>
-                        </div>
+                        <h4 class="desc">DESCRIPTION OF APP</h4>
+                        <h6 class="desc">TOOLS USED</h6>
                     </div>
                     <div class="work-row-3-column-2">
-                        <div class="description">
-                            <h4>DESCRIPTION OF APP</h4>
-                            <h5>TOOLS USED</h5>
-                        </div>
+                        <h4 class="desc">SEO Refactor</h4>
+                        <h6 class="desc">HTML/CSS</h6>
                     </div>    
                 </div>
                 </div>
             </div>
-        </div>
-        <div id="contact" class="contact">
-            <div class="column-1">
-                <h3>CONTACT</h3>
+        </section>
+        <section id="contact" class="row contact">
+            <div class="column left-side-contact"><h3>Contact</h3>
             </div>
-            <div class="column-2">
-                <ul>
-                    <li>
-                    (555)-555-5555
-                    </li>
-                    <li>
-                    EMAIL@EMAIL.EMAIL
+            <div class="column right-side-contact">
+                <div class="phone-number">
+                    <!-- this div shall display the phone number -->
+                    <h6>Phone Number:</h6>
+                    <h4>(555)-555-5555</h4>
+                </div>
+                <div class="email-address">
                     <!-- this shall link to an email terminal function -->
-                    </li>
-                    <li>
-                    URL
-                    <!-- this shall display the URL -->
-                    </li>
-                    <li>
-                    github URL
-                    <!-- this shall display the github repository URL -->
-                    </li>
-                </ul>
+                    <h6>Email Address:</h6>
+                    <h4>EMAIL@EMAIL.EMAIL</h4>
+                </div>
+                <div class="url">
+                    <!-- this shall display the URL for my github repository-->
+                    <h6>GitHub Repository</h6>
+                   <a href="https://github.com/eljayman">github.com/eljayman</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
