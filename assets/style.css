@@ -1,0 +1,73 @@
+:root {
+    --background-color: rgb(211, 247, 242);
+    --header-background-color: rgba(3, 108, 194, 0.432);
+    --link-color: rgb(109, 53, 53);
+    --border-color: black;
+}
+
+*{ 
+    background-color: var(--background-color);
+}
+
+body {
+    font-size: 3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    color: var(--link-color);
+}
+h1 {
+    font-size: 200%;
+    padding: 2vw;
+}
+h2 {
+    font-size: 150%;
+/* h3 {
+    font-size: 125%;
+} */
+}
+h4 {
+    font-size: 100%;
+}
+h5 {
+    font-size: 50%;
+}
+h6 {
+    font-size: 25%;
+}
+
+header {  
+    background-color: var(--header-background-color);
+    /* border-color: var(--border-color); */
+    border: solid black;
+    width: 96%;
+}
+
+header h1 {
+    text-align: center;
+    /* margin: 5vw 0vw; */
+}
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--header-background-color);
+    padding: 5vw;
+    border-radius: 50%;
+    max-height: 50vw;
+}
+header a {  
+    display: block;
+    font-size: 150%;
+    text-align: center;  
+    padding: 1vw;  
+}
+main {
+    width: 96%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}

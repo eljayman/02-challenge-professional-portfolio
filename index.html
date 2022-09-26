@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Professional Portfolio</title>
-</head>
+ </head>
+
 <body>
-    <!-- the containers shall be flex containers so that on a mobile device the content will be displayed in a single column and made to grow into two and three columns on devices with larger screens -->
+    <!-- the containers shall be made so that on a mobile device the content will be displayed in a single column and made to grow into two columns on devices with larger screens -->
     <header>
         <!-- contains image, name, links -->
-        <img src="./assets/PLACEHOLDER" alt="SELFIE">
-        <!-- image shall be encircled at the top left over name -->
-        <h1>LELAND JOHNSON</h1>
-        <div class="header-links">
-            <!-- header links shall be right justified -->
-            <ul>
-                <li>
+        <section class="column header-1">
+            <img src="./assets/imgprofport.jpg" alt="selfie">
+            <h1>Leland Johnson</h1>            
+        </section>
+        <section class="column header-2">
+            <div class="header link">
+                <div class="header link about-me">
                     <a href="#about-me">ABOUT ME</a>
-                </li>
-                <li>
+                </div>
+                <div class="header link work">
                     <a href="#work">WORK</a>
-                </li>
-                <li>
+                </div>
+                <div class="header link contact">
                     <a href="#contact">CONTACT</a>
-                </li>
-            </nav>
-        </div>
+                </div>
+            </div>
+        </section>
     </header>
     <div class="hero">
         <!-- hero should have cool subtitle on the bottom-right -->
@@ -36,84 +38,86 @@
             <h2>COOL SUBTITLE</h2>
         </div>
     </div>
-    <div id="#about-me" class="about-me">
+    <main>
+        <div id="#about-me" class="about-me">
         <!-- this section of the page shall be in columns and rows such that the left is ~25% of the width of the screen on larger displays and the right column fills the rest -->
-        <div class="column-1">
+            <div class="column-1">
             <h3>ABOUT ME</h3>
-        </div>
-        <div class="column-2">
+            </div>
+            <div class="column-2">
             <p>TEXT ABOUT ME</p>
+            </div>
         </div>
-    </div>
-    <div id="#work" class="work">
-        <div class="column-1">
-            <h3>WORK</h3>
-        </div>
-        <div class="column-2">
+        <div id="#work" class="work">
+            <div class="column-1">
+                <h3>WORK</h3>
+            </div>
+            <div class="column-2">
             <!-- each container within column-2 should link to corresponding challenges/projects -->
-            <div class="work-row-1">
+                <div class="work-row-1">
                 <!-- this container shall span the entire column -->
-                <div class="description">
+                    <div class="description">
                     <h4>DESCRIPTION OF APP</h4>
                     <h5>TOOLS USED</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="work-row-2">
+                <div class="work-row-2">
                 <!-- this container shall have two columns that span its width -->
-                <div class="work-row-2-column-1">
-                    <div class="description">
-                        <h4>DESCRIPTION OF APP</h4>
-                        <h5>TOOLS USED</h5>
+                    <div class="work-row-2-column-1">
+                        <div class="description">
+                            <h4>DESCRIPTION OF APP</h4>
+                            <h5>TOOLS USED</h5>
+                        </div>
                     </div>
+                    <div class="work-row-2-column-2">
+                        <div class="description">
+                            <h4>DESCRIPTION OF APP</h4>
+                            <h5>TOOLS USED</h5>
+                        </div>
+                    </div>    
                 </div>
-                <div class="work-row-2-column-2">
-                    <div class="description">
-                        <h4>DESCRIPTION OF APP</h4>
-                        <h5>TOOLS USED</h5>
-                    </div>
-                </div>    
-            </div>
-            <div class="work-row-3">
+                <div class="work-row-3">
                  <!-- this container shall have two columns that span its width -->
-                 <div class="work-row-3-column-1">
-                    <div class="description">
-                        <h4>DESCRIPTION OF APP</h4>
-                        <h5>TOOLS USED</h5>
+                    <div class="work-row-3-column-1">
+                        <div class="description">
+                            <h4>DESCRIPTION OF APP</h4>
+                            <h5>TOOLS USED</h5>
+                        </div>
                     </div>
+                    <div class="work-row-3-column-2">
+                        <div class="description">
+                            <h4>DESCRIPTION OF APP</h4>
+                            <h5>TOOLS USED</h5>
+                        </div>
+                    </div>    
                 </div>
-                <div class="work-row-3-column-2">
-                    <div class="description">
-                        <h4>DESCRIPTION OF APP</h4>
-                        <h5>TOOLS USED</h5>
-                    </div>
-                </div>    
-            </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="#contact" class="contact">
-        <div class="column-1">
-            <h3>CONTACT</h3>
-        </div>
-        <div class="column-2">
-            <ul>
-                <li>
+        <div id="#contact" class="contact">
+            <div class="column-1">
+                <h3>CONTACT</h3>
+            </div>
+            <div class="column-2">
+                <ul>
+                    <li>
                     (555)-555-5555
-                </li>
-                <li>
+                    </li>
+                    <li>
                     EMAIL@EMAIL.EMAIL
                     <!-- this shall link to an email terminal function -->
-                </li>
-                <li>
+                    </li>
+                    <li>
                     URL
                     <!-- this shall display the URL -->
-                </li>
-                <li>
+                    </li>
+                    <li>
                     github URL
                     <!-- this shall display the github repository URL -->
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
