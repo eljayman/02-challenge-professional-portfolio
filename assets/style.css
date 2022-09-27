@@ -168,7 +168,7 @@ main {
     width: 50%;
     height: 31vw;
     border: solid var(--border-color);
-    margin-bottom: 1vw;
+    margin: 1vw;
     background-image: url("../assets/image-me.jpg");
     background-size: cover;
     background-position: center; 
@@ -177,7 +177,7 @@ main {
     width: 50%;
     height: 31vw;
     border: solid var(--border-color);
-    margin-bottom: 1vw;
+    margin: 1vw;
     background-image: url("../assets/image-me.jpg");
     background-size: cover;
     background-position: center; 
@@ -191,7 +191,7 @@ main {
     width: 50%;
     height: 31vw;
     border: solid var(--border-color);
-    margin-bottom: 1vw;
+    margin: 1vw;
     background-image: url("../assets/image-me.jpg");
     background-size: cover;
     background-position: center; 
@@ -200,7 +200,7 @@ main {
     width: 50%;
     height: 31vw;
     border: solid var(--border-color);
-    margin-bottom: 1vw;
+    margin: 1vw;
     background-image: url("../assets/SSC1.png");
     background-size: cover;
     background-position: center; 
