@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
- </head>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- the containers shall be made so that on a mobile device the content will be displayed in a single column and made to grow into two columns on devices with larger screens -->
     <header>
-        <!-- contains image, name, links -->
-        <section class="row header-1">
-            <!-- <img src="./assets/imgprofport.jpg" alt="selfie"> -->
-            <h1>eljayman</h1>            
-        </section>
-        <section class="row header-2">
-            <div class="header links">
-                <!-- these shall go to the corresponding section of the page -->
-                <div class="header links-about-me">
-                    <a href="#about-me">About Me</a>
-                </div>
-                <div class="header links-works">
-                    <a href="#works">Work</a>
-                </div>
-                <div class="header links-contact">
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </section>
+      <!-- contains image, name, links -->
+      <section class="row header-1">
+        <!-- <img src="./assets/imgprofport.jpg" alt="selfie"> -->
+        <h1>Leland Johnson</h1>
+      </section>
+      <section class="row header-2">
+        <div class="header links">
+          <!-- these shall go to the corresponding section of the page -->
+          <div class="header links-about-me">
+            <a href="#about-me">About Me</a>
+          </div>
+          <div class="header links-works">
+            <a href="#works">Work</a>
+          </div>
+          <div class="header links-contact">
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
     </header>
-    <div class="hero" alt="Office Space Selfie">
-        <!-- hero shall have subtitle on the bottom-right -->
-        <h2 class="subtitle">Building the Dream</h2>        
+    <div class="hero" alt="Hero Kitten">
+      <!-- hero shall have subtitle on the bottom-right -->
+      <h2 class="subtitle">Building the Dream</h2>
     </div>
     <main>
-                <!-- this section of the page shall be in columns and rows such that the left is 30% of the width of the screen on larger displays and the right column fills the rest -->
-        <section id="about-me" class="row about-me">
-            <div class="column left-side-about"><h3>About Me</h3>            
-            </div>
-            <div class="column right-side-about">
-            <p>I am typing text about me so that I can see how it fills this container.  I will continue typing until I see how the field responds to a bigger block of text.  So far I like how it is working.</p>
-            </div>
-        </section>
-        <section id="works" class="row works">
-            <div class="column left-side-works"><h3>Works</h3>
-            </div>
-            <div class="column right-side-works">
-            <!-- each container within column-2 should link to corresponding challenges/projects -->
-                <div class="row works-1">
-                <!-- this container shall span the entire column -->
-                    <h4 class="desc">DESCRIPTION OF APP</h4>
-                    <h6 class="desc">TOOLS USED</h6>
-                </div>
-                <div class="row works-2">
-                <!-- this container shall have two columns that span its width -->
-                    <div class="work-row-2-column-1">
-                        <h4 class="desc">DESCRIPTION OF APP</h4>
-                        <h6 class="desc">TOOLS USED</h6>
-                    </div>
-                    <div class="work-row-2-column-2">
-                        <h4 class="desc">DESCRIPTION OF APP</h4>
-                        <h6 class="desc">TOOLS USED</h6>
-                    </div>    
-                </div>
-                <div class="row works-3">
-                 <!-- this container shall have two columns that span its width -->
-                    <div class="work-row-3-column-1">
-                        <h4 class="desc">DESCRIPTION OF APP</h4>
-                        <h6 class="desc">TOOLS USED</h6>
-                    </div>
-                    <a class="work-row-3-column-2" href="https://eljayman.github.io/challenge-01-seo-refactor/">
-                        <h4 class="desc">SEO Refactor</h4>
-                        <h6 class="desc">HTML/CSS</h6>
-                    </a>    
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="row contact">
-            <h3 class="column left-side-contact">Contact</h3>
-            <div class="column right-side-contact">
-                <div class="phone-number"><h6>Phone Number:</h6>
-                    <!-- this div shall display the phone number -->                    
-                    <h5>(555)-555-5555</h5> </div>           
-                <div class="email-address"><h6>Email Address:</h6>
-                    <!-- this shall link to an email terminal function -->
-                    <h5>EMAIL@EMAIL.EMAIL</h5></div>
-                <div class="url"><h6>GitHub Repository:</h6>
-                   <a href="https://github.com/eljayman">github.com/eljayman</a>
-                </div>
-            </div>
-        </section>
+      <!-- this section of the page shall be in columns and rows such that the left is 30% of the width of the screen on larger displays and the right column fills the rest -->
+      <section id="about-me" class="row about-me">
+        <div class="column left-side-about"><h3>About Me</h3></div>
+        <div class="column right-side-about">
+          <p>
+            I am learning to code by building websites based on HTML, CSS and
+            JavaScript. Here are some of my early works.
+          </p>
+        </div>
+      </section>
+      <section id="works" class="row works">
+        <div class="column left-side-works"><h3>Works</h3></div>
+        <div class="column right-side-works">
+          <!-- each container within column-2 should link to corresponding challenges/projects -->
+          <div class="row works-1">
+            <a
+              class="work-row-1-column-1"
+              href="https://eljayman.github.io/stock-price-checker/"
+            >
+              <!-- this container shall span the entire column -->
+
+              <h4 class="desc">Stock Price Checker</h4>
+              <h6 class="desc">
+                HTML, CSS, and JavaScript with third party API's
+              </h6>
+            </a>
+          </div>
+          <div class="row works-2">
+            <!-- this container shall have two columns that span its width -->
+            <a
+              class="work-row-2-column-1"
+              href="https://eljayman.github.io/06-weather-app-challenge/"
+            >
+              <h4 class="desc">Weather Application</h4>
+              <h6 class="desc">openweather.org API</h6>
+            </a>
+            <a
+              class="work-row-2-column-2"
+              href="https://eljayman.github.io/05-work-day-scheduler/"
+            >
+              <h4 class="desc">Task Scheduler</h4>
+              <h6 class="desc">JavaScript with JQuery</h6>
+            </a>
+          </div>
+          <div class="row works-3">
+            <!-- this container shall have two columns that span its width -->
+            <a
+              class="work-row-3-column-1"
+              href="https://eljayman.github.io/03-password-generator/"
+            >
+              <h4 class="desc">Password Generator</h4>
+              <h6 class="desc">JavaScript</h6>
+            </a>
+            <a
+              class="work-row-3-column-2"
+              href="https://eljayman.github.io/04-web-APIs-challenge/"
+            >
+              <h4 class="desc">JavaScript Quiz</h4>
+              <h6 class="desc">HTML/CSS and JavaScript</h6>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="row contact">
+        <h3 class="column left-side-contact">Contact</h3>
+        <div class="column right-side-contact">
+          <div class="phone-number">
+            <h6>Phone Number:</h6>
+            <!-- this div shall display the phone number -->
+            <a href="tel:3855579190">(385)-557-9190</a>
+          </div>
+          <div class="email-address">
+            <h6>Email Address:</h6>
+            <a href="mailto:lelandoj@gmail.com" class="email-address">
+              <!-- this shall link to an email terminal function -->
+              lelandoj@gmail.com
+            </a>
+          </div>
+          <div class="url">
+            <h6>GitHub Repository:</h6>
+            <a href="https://github.com/eljayman">github.com/eljayman</a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
